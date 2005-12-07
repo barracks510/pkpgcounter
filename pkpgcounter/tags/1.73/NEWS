@@ -1,0 +1,155 @@
+# $Id$
+
+pkpgcounter : a generic Page Description Language parser
+
+(c) 2003, 2004, 2005 Jerome Alet <alet@librelogiciel.com>
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+=============================================================================
+
+pkpgcounter News :
+
+  * 1.73 :
+  
+    - Fixed duplex detection code in PCL3/4/5 parser.
+    
+    - Fixed PCLXL detection code.
+    
+    - Fixed retrieval of custom media types' names in PCLXL.
+    
+    - Added inactive code to compute ink coverage ala PrintBill.
+    
+  * 1.72 :
+  
+    - Improved heuristic to detect when ghostscript has to be used to do
+      the parsing.
+   
+  * 1.71 :
+  
+    - Now uses ghostscript as the parser when the PS stream was created by a
+      particular MSWindows driver.
+    
+    - Only complains about Psyco missing at install time, and stays
+      quiet when running without Psyco.
+      
+  * 1.70 :
+  
+    - Fixed some PJL escaping issue in the PCLXL and PCL3/4/5 parsers.
+    
+  * 1.69 :
+  
+    - Improved PCL3/4/5 parser.
+    
+    - Improved PCLXL parser wrt PJL stuff.
+    
+  * 1.68 :
+  
+    - Improved PostScript parser.
+    
+  * 1.67 :
+  
+    - Improved PostScript parser.
+    
+    - Improved PCL3/4/5 parser.
+    
+  * 1.66 : 
+  
+    - Improved PCLXL parser.
+    
+    - Improved PCL3/4/5 parser.
+    
+  * 1.65 :
+    
+    - Improved PostScript parser.
+    
+    - Improved PCL3/4/5 parser.
+    
+  * 1.64 :
+    
+    - Improved PCL3/4/5 parser.
+    
+  * 1.63 :
+  
+    - Now handles PJL statements to extract number of copies, duplex mode
+      and paper size in the PCLXL and PCL3/4/5 parsers.
+    
+  * 1.62 :
+  
+    - Better handling of the number of copies in the PCLXL parser.
+    
+    - Better handling of the number of copies in the PCL3/4/5 parser.
+      
+  * 1.61 :
+  
+    - Improved PCL3/4/5 parser.
+    
+    - Better handling of the number of copies in the PostScript parser.
+      Now the number can be different from page to page.
+    
+  * 1.60 : 
+  
+    - Improved PCLXL parser.
+    
+  * 1.59 :
+    
+    - Major rewrite of the PDF parser to correctly handle all line endings.
+      
+  * 1.58 :
+  
+    - Fix for PDF files which contain several versions of the same PDF object.
+    
+    - Doesn't break when python-psyco is not available.
+    
+  * 1.57 : 
+  
+    - Fixed a recently introduced bug in binary postscript handling code.  
+    
+  * 1.56 :
+  
+    - Renamed the library from pdlanalyzer into pkpgpdls to avoid problems
+      when the code will be integrated back into PyKota.
+      
+  * 1.55 : 
+  
+    - Added support for OpenOffice.org Writer and Impress documents.
+    
+  * 1.54 :
+   
+    - Added online documentation and a manual page.
+    
+  * 1.53 : 
+  
+    - Moved code around to improve maintainability.
+    
+  * 1.52 : 
+  
+    - Added support for the TIFF format.
+    
+  * 1.51 : 
+  
+    - Added support for the DVI format.
+    
+  * 1.50 :
+  
+    - Major code changes to modularize. The pkpgcounter command line tool
+      is now just an almost empty skeleton, which uses the pdlanalyzer
+      library.
+      
+    - Several improvements to the parsing code.  
+      
+  * 1.00 :
+
+    - First release.
+
